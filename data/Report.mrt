@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <连接1 Ref="2" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
+        <Alias>连接1</Alias>
+        <Name>连接1</Name>
+        <PathData>D:\workProject\reportServer\data\7e5da7b3-cb2e-4e2b-ba46-a7aa8c471d3b.xml</PathData>
+        <PathSchema>D:\workProject\reportServer\data\simpleFlag.xsd</PathSchema>
+      </连接1>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <simpleFlag Ref="3" type="DataTableSource" isKey="true">
+        <Alias>simpleFlag</Alias>
+        <Columns isList="true" count="15">
+          <value>name,System.String</value>
+          <value>no,System.String</value>
+          <value>gcbw,System.String</value>
+          <value>jyrq,System.String</value>
+          <value>ypcz,System.String</value>
+          <value>ztms,System.String</value>
+          <value>extValue1,System.String</value>
+          <value>extValue2,System.String</value>
+          <value>extValue3,System.String</value>
+          <value>extValue4,System.String</value>
+          <value>extName1,System.String</value>
+          <value>extName2,System.String</value>
+          <value>extName3,System.String</value>
+          <value>extName4,System.String</value>
+          <value>qrcode,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>simpleFlag</Name>
+        <NameInSource>simpleFlag.simpleFlag</NameInSource>
+      </simpleFlag>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <LabelsDataBand Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,18,9.8</ClientRectangle>
+          <ColumnGaps>2</ColumnGaps>
+          <Columns>2</Columns>
+          <ColumnWidth>8</ColumnWidth>
+          <Components isList="true" count="3">
+            <Label_Area Ref="6" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,8,8</ClientRectangle>
+              <Components isList="true" count="1">
+                <Panel1 Ref="7" type="Panel" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,8,8</ClientRectangle>
+                  <Components isList="true" count="22">
+                    <Text1 Ref="8" type="Text" isKey="true">
+                      <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,0,8,1.2</ClientRectangle>
+                      <ComponentStyle>标题1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,16,Bold</Font>
+                      <Guid>2cab503015184a67bab009c76eed73ff</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text1</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>样品标签</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text1>
+                    <Text2 Ref="9" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,1.2,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>2a43c5cceb324c53a5b262415e7261d0</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text2</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>样品名称</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text2>
+                    <Text3 Ref="10" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,1.2,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>65d55fce50f347aaa0fe30668c9901cc</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text3</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.name}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text3>
+                    <Text4 Ref="11" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,1.6,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>2005449ed54846ea8728f0f459fcfd1a</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text4</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>样品编号</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text4>
+                    <Text5 Ref="12" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,1.6,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>9d5dd815b45e4a2d9666b03c4115b76a</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text5</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.no}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text5>
+                    <Text6 Ref="13" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,2,2.8,0.8</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>62fd94fa0c15416ca3acd9dfbc4d1954</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text6</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>工程部位/用途</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text6>
+                    <Text7 Ref="14" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,2,5.2,0.8</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>b379229034c943b8bb799e2b38207436</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text7</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.gcbw}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+                      <Type>Expression</Type>
+                    </Text7>
+                    <Text8 Ref="15" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,2.8,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>e9d914b7fd7e4a6b9e6f9a83d8e3569b</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text8</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extName1}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text8>
+                    <Text9 Ref="16" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,2.8,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>dd2f0b0d5cd64db2a8f0d486afea5d62</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text9</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extValue1}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text9>
+                    <Text10 Ref="17" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,3.2,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>b53afa21c8234be7b5203367dd762e15</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text10</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extName2}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text10>
+                    <Text11 Ref="18" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,3.2,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>0d01858970e846b8a47ce77fe0613b36</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text11</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extValue2}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text11>
+                    <Text12 Ref="19" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,3.6,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>5012fc7037ed421d924301efaf98566b</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text12</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extName3}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text12>
+                    <Text13 Ref="20" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,3.6,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>388333d51932423c90e216a81057b4fb</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text13</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extValue3}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text13>
+                    <Text14 Ref="21" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,4,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>b3fecd333c9f4b71bb0ed603bf3850c5</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text14</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extName4}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text14>
+                    <Text15 Ref="22" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,4,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>0d2c2f7f59d44b81b0ee98120dafb13b</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text15</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.extValue4}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text15>
+                    <Text16 Ref="23" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,4.4,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>04a44e3f257f41a797335ffc01fb7a2e</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text16</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>取样日期</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text16>
+                    <Text17 Ref="24" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,4.4,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>03f1a75e76f04ab8995109464a9bfefd</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text17</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.jyrq}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>DataColumn</Type>
+                    </Text17>
+                    <BarCode1 Ref="25" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+                      <AutoScale>True</AutoScale>
+                      <BackColor>Transparent</BackColor>
+                      <BarCodeType Ref="26" type="Stimulsoft.Report.BarCodes.StiQRCodeBarCodeType" isKey="true" />
+                      <Border>None;Black;1;None;False;4;Black</Border>
+                      <ClientRectangle>2.8,5.8,1.8,1.8</ClientRectangle>
+                      <Code>{simpleFlag.qrcode}</Code>
+                      <Conditions isList="true" count="0" />
+                      <Font>Arial,8,Bold,Pixel</Font>
+                      <ForeColor>Black</ForeColor>
+                      <Name>BarCode1</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                    </BarCode1>
+                    <Text20 Ref="27" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,5.2,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>60a513ddbda3424397341eee108ed22c</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text20</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>样品处置要求</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text20>
+                    <Text21 Ref="28" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,5.2,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>b113cae58ee94aff88903fea43060c47</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text21</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{simpleFlag.ypcz}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                    </Text21>
+                    <Text18 Ref="29" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,4.8,2.8,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>6cfc9c6663254f8abbb41f67fe7bfa2b</Guid>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text18</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>样品状态</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </Text18>
+                    <Text19 Ref="30" type="Text" isKey="true">
+                      <Border>All;Black;1;Solid;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>2.8,4.8,5.2,0.4</ClientRectangle>
+                      <ComponentStyle>data1</ComponentStyle>
+                      <Conditions isList="true" count="0" />
+                      <Font>微软雅黑,8,Bold</Font>
+                      <Guid>819c4438889a42c3afa04a59328ddbbf</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text19</Name>
+                      <Page isRef="4" />
+                      <Parent isRef="7" />
+                      <Text>{"☐未检 ☐待检 ☐已检 ☐留样"}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                    </Text19>
+                  </Components>
+                  <Conditions isList="true" count="0" />
+                  <Guid>3f14721e1b524f3f825392451bfcecea</Guid>
+                  <Name>Panel1</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="6" />
+                </Panel1>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Label_Area</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Label_Area>
+            <StartPointPrimitive1 Ref="31" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>9,0,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>e323a746bbc8492ab3296d9dd315dffe</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <HorizontalLinePrimitive1 Ref="32" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,9,8,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="33" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <StartCap Ref="34" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>simpleFlag</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>LabelsDataBand</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </LabelsDataBand>
+        <VerticalLinePrimitive1 Ref="35" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>9,0.4,0.0254,28.2</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="36" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>e323a746bbc8492ab3296d9dd315dffe</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <StartCap Ref="37" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <EndPointPrimitive1 Ref="38" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>9,28.6,0,0</ClientRectangle>
+          <Name>EndPointPrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ReferenceToGuid>e323a746bbc8492ab3296d9dd315dffe</ReferenceToGuid>
+        </EndPointPrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>b3e131f8d5b54777ac3d0487d4fdd2c5</Guid>
+      <Margins>1.5,1.5,0.95,-0.947000000000002</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <RightToLeft>True</RightToLeft>
+      <Watermark Ref="39" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="40" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/12/2020 4:43:52 PM</ReportChanged>
+  <ReportCreated>10/25/2020 1:06:50 PM</ReportCreated>
+  <ReportFile>D:\workProject\reportServer\data\Report.mrt</ReportFile>
+  <ReportGuid>dfbcc78fd9cf4d33b24c4b98bec9aaa2</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="3">
+    <标题1 Ref="41" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>AdvBlack;1;Solid;Black;1;Solid;Black;1;Solid;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Description />
+      <Font>微软雅黑,16,Bold</Font>
+      <Name>标题1</Name>
+      <TextBrush>Black</TextBrush>
+    </标题1>
+    <data1 Ref="42" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Description />
+      <Font>微软雅黑,8,Bold</Font>
+      <Name>data1</Name>
+      <TextBrush>Black</TextBrush>
+      <VertAlignment>Center</VertAlignment>
+    </data1>
+    <data2 Ref="43" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Conditions isList="true" count="0" />
+      <Description />
+      <Font>宋体,8.25,Regular,Point,False,134</Font>
+      <Name>data2</Name>
+      <TextBrush>Black</TextBrush>
+    </data2>
+  </Styles>
+</StiSerializer>

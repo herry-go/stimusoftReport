@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<flag version="1.0">
+  <simpleFlag>
+    <name>钢筋</name>
+    <no>YP-20200914-GJJ-0001</no>
+    <gcbw></gcbw>
+    <jyrq>2020-09-14</jyrq>
+    <ypcz>√废弃 ☐留样 ☐归还</ypcz>
+    <ztms></ztms>
+    <extValue1></extValue1>
+    <extValue2></extValue2>
+    <extValue3></extValue3>
+    <extValue4></extValue4>
+    <extName1>牌号</extName1>
+    <extName2>公称直径(mm)</extName2>
+    <extName3>生产厂家</extName3>
+    <extName4>生产批号</extName4>
+    <qrcode>http://gd.zhikongbao.cn/mobile_device_syb/html/simpleFlagDetail.html?id=11684d57-c134-3dc5-80f0-c0d45e2671b9</qrcode>
+  </simpleFlag>
+</flag>

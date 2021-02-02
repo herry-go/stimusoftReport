@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<flag version="1.0">
+  <simpleFlag>
+    <name>123</name>
+    <no>YP-20200824-SYH-0001</no>
+    <gcbw>123123123123123123123123</gcbw>
+    <jyrq>2020-08-24</jyrq>
+    <ypcz>√废弃 ☐留样 ☐归还</ypcz>
+    <ztms></ztms>
+    <extValue1>M5</extValue1>
+    <extValue2>2020-11-12</extValue2>
+    <extValue3>123</extValue3>
+    <extValue4>70.7×70.7×70.7</extValue4>
+    <extName1>强度等级</extName1>
+    <extName2>成型日期</extName2>
+    <extName3>龄期（d）</extName3>
+    <extName4>试件尺寸(mm)</extName4>
+    <qrcode>http://gd.zhikongbao.cn/mobile_device_syb/html/simpleFlagDetail.html?id=1e25da99-8134-3d61-e4ee-b64b4ab2ba24</qrcode>
+  </simpleFlag>
+  <simpleFlag>
+    <name>123</name>
+    <no>YP-20201112-SYH-0001</no>
+    <gcbw></gcbw>
+    <jyrq>2020-08-24</jyrq>
+    <ypcz>√废弃 ☐留样 ☐归还</ypcz>
+    <ztms></ztms>
+    <extValue1>M5</extValue1>
+    <extValue2>2020-11-12</extValue2>
+    <extValue3>123</extValue3>
+    <extValue4>70.7×70.7×70.7</extValue4>
+    <extName1>强度等级</extName1>
+    <extName2>成型日期</extName2>
+    <extName3>龄期（d）</extName3>
+    <extName4>试件尺寸(mm)</extName4>
+    <qrcode>http://gd.zhikongbao.cn/mobile_device_syb/html/simpleFlagDetail.html?id=4301e05c-a134-3e90-f51a-fae874a41925</qrcode>
+  </simpleFlag>
+</flag>

@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="test" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="test" msdata:IsDataSet="true" msdata:Locale="" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="syd_simple">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="simpleNo" type="xs:string" minOccurs="0" />
+              <xs:element name="simpleName" type="xs:string" minOccurs="0" />
+              <xs:element name="noDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="price" type="xs:double" minOccurs="0" />
+              <xs:element name="state" type="xs:int" minOccurs="0" />
+              <xs:element name="value4" type="xs:string" minOccurs="0" />
+              <xs:element name="testNames" type="xs:string" minOccurs="0" />
+              <xs:element name="wkFileName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="simpleFlag">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0"  />
+              <xs:element name="no" type="xs:string" minOccurs="0" />
+              <xs:element name="gcbw" type="xs:string" minOccurs="0" />
+              <xs:element name="jyrq" type="xs:string" minOccurs="0" />
+              <xs:element name="ypcz" type="xs:string" minOccurs="0" />
+              <xs:element name="ztms" type="xs:string" minOccurs="0" />
+              <xs:element name="extValue1" type="xs:string" minOccurs="0" />
+              <xs:element name="extValue2" type="xs:string" minOccurs="0" />
+              <xs:element name="extValue3" type="xs:string" minOccurs="0" />
+              <xs:element name="extValue4" type="xs:string" minOccurs="0" />
+              <xs:element name="extName1" type="xs:string" minOccurs="0" />
+              <xs:element name="extName2" type="xs:string" minOccurs="0" />
+              <xs:element name="extName3" type="xs:string" minOccurs="0" />
+              <xs:element name="extName4" type="xs:string" minOccurs="0" />
+              <xs:element name="qrcode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
